@@ -1,0 +1,20 @@
+[2019-12-01 20:09:46] This is codeql database create testingDB --language=java
+[2019-12-01 20:09:46] Log file was started late.
+[2019-12-01 20:09:46] Using autobuild script D:\1_CodeQL_home\1_codeql-cli\codeql\java\tools\autobuild.cmd.
+[2019-12-01 20:09:46] [DETAILS] database create> Detected autobuild command: D:\1_CodeQL_home\1_codeql-cli\codeql\java\tools\autobuild.cmd.
+[2019-12-01 20:09:46] [PROGRESS] database create> Running command [D:\1_CodeQL_home\1_codeql-cli\codeql\java\tools\autobuild.cmd] in D:\ecplise_workspace\TestingJavaProject.
+[2019-12-01 20:09:46] Running plumbing command: codeql database trace-command --working-dir=D:\ecplise_workspace\TestingJavaProject -- D:\ecplise_workspace\TestingJavaProject\testingDB D:\1_CodeQL_home\1_codeql-cli\codeql\java\tools\autobuild.cmd
+[2019-12-01 20:09:46] [PROGRESS] database trace-command> D:\ecplise_workspace\TestingJavaProject\testingDB: Running in D:\ecplise_workspace\TestingJavaProject: [D:\1_CodeQL_home\1_codeql-cli\codeql\java\tools\autobuild.cmd]
+[2019-12-01 20:09:46] Setting up tracing from specification at D:\1_CodeQL_home\1_codeql-cli\codeql\java\tools\compiler-tracing.spec.
+[2019-12-01 20:09:46] Picked up extra JVM args: [-javaagent:D:\1_CodeQL_home\1_codeql-cli\codeql\java\tools/codeql-java-agent.jar=ignore-project,java, -Xbootclasspath/a:D:\1_CodeQL_home\1_codeql-cli\codeql\java\tools/codeql-java-agent.jar]
+[2019-12-01 20:09:47] [build-err] ERROR: Could not detect a suitable build command for the source checkout.
+[2019-12-01 20:09:47] [ERROR] Spawned process exited abnormally (code 1; tried to run: [D:\1_CodeQL_home\1_codeql-cli\codeql\tools\win64\tracer.exe, D:\1_CodeQL_home\1_codeql-cli\codeql\tools\win64\runner.exe, cmd.exe, /C, type, NUL, &&, D:\1_CodeQL_home\1_codeql-cli\codeql\java\tools\autobuild.cmd])
+[2019-12-01 20:09:47] Exception caught at top level: Exit status 1 from command [D:\1_CodeQL_home\1_codeql-cli\codeql\java\tools\autobuild.cmd]
+                      com.semmle.cli2.database.TraceCommandCommand.executeSubcommand(TraceCommandCommand.java:129)
+                      com.semmle.cli2.picocli.PlumbingRunner.run(PlumbingRunner.java:72)
+                      com.semmle.cli2.picocli.SubcommandCommon.runPlumbingInProcess(SubcommandCommon.java:130)
+                      com.semmle.cli2.database.CreateCommand.executeSubcommand(CreateCommand.java:95)
+                      com.semmle.cli2.picocli.SubcommandCommon.call(SubcommandCommon.java:366)
+                      com.semmle.cli2.picocli.SubcommandMaker.runMain(SubcommandMaker.java:167)
+                      com.semmle.cli2.picocli.SubcommandMaker.runMain(SubcommandMaker.java:175)
+                      com.semmle.cli2.CodeQL.main(CodeQL.java:87)
